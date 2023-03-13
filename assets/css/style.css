@@ -8,7 +8,7 @@
 
 body {
     padding: 0;
-    margin: 0;
+    margin: auto;
     box-sizing: border-box;
     max-width: 1400px;
 }
@@ -37,12 +37,16 @@ header {
     list-style-type: none;
 }
 
+.menu > li:first-child {
+    margin-right: 20px;
+}
+
 .menu > li > a {
     text-decoration: none;
     color: black;
-    font-size: 1.2rem;
+    font-size: .9rem;
     font-weight: bolder;
-    margin-right: 30px;
+    margin-right: 40px;
 }
 
 .menu > li > a:hover {
@@ -53,7 +57,7 @@ header {
     position: absolute;
     content: "";
     display: block;
-    width: 160px;
+    width: 150px;
     height: 5px;
     top: -20px;
     background-color: #0065FC;
@@ -90,7 +94,7 @@ main {
 }
 
 .search_input {
-    width: 282px;
+    width: 200px;
     padding: 15px 16px 15px 16px;
     margin: 0 0 0 15px;
     border: none;
@@ -106,7 +110,7 @@ main {
 .search_btn {
     width: 132px;
     height: 50px;
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Raleway';
     font-weight: 700;
     padding: 12px 16px 15px 16px;
@@ -142,14 +146,18 @@ main {
     justify-content: center;
 }
 
+.filter_box > a > p {
+    margin: 0;
+  }
+
 .filter_box > a {
     display: flex;
     align-items: center;
-    border: 1px solid black;
+    border: 2px solid rgba(155, 153, 153, 0.377);
     border-radius: 25px;
     text-decoration: none;
-    padding: 0 15px;
-    margin-left: 1.3rem;
+    padding: 12px 20px;
+    margin-left: 2rem;
     font-weight: 700;
     color: black;
   }
@@ -160,16 +168,18 @@ main {
   
   .btn_filter > i {
     color: #0065fc;
-    margin-right: 5px;
+    margin-right: 10px;
   }
 
 
 .info {
     display: flex;
     align-items: center;
+    margin: 20px 0;
 }
 
 .info > i {
+    font-size: .8rem;
     padding: 5px 10px;
     border: 1px solid #D9D9D9;
     border-radius: 50%;
@@ -178,7 +188,7 @@ main {
 }
 
 .info > p {
-    margin-left: 1.3rem;
+    margin-left: .8rem;
 }
 
 /*------------ ACCOMODATION CONTENT --------------*/
@@ -213,12 +223,11 @@ main {
     background-color:#F2F2F2;
     border-radius: 20px;
     height: max-content;
-    padding: 0 30px;
+    padding: 0 3px;
 }
 
 .accommodation_container > h2 {
-    font-size: 1.7rem;
-    margin: 42px 0 23px 50px;
+    margin: 42px 0 23px 40px;
 }
 
 .card_accomodation {
@@ -235,8 +244,8 @@ main {
     margin: 4px 0 0 16px;
 }
 
-.card_accomodation > a > p, .card_popular > a > p {
-    font-size: 1rem;
+.card_accomodation > a > p {
+    font-size: .9rem;
     font-weight: 400;
     margin: 4px 0 0 16px;
     padding-bottom: 25px;
@@ -271,9 +280,9 @@ main {
 
 .flex_popular {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    font-size: 1.1rem;
+    font-size: 1rem;
     padding-top: 20px;
 }
 
@@ -323,11 +332,11 @@ main {
 
 .popular_info > h3 {
     margin: 12px 0 0 0;
-    color: black;
 }
+
 .popular_info > p {
     margin: 7px 0 0 0;
-    color: black;
+    font-size: .9rem;
 }
 
 .more_info {
@@ -343,11 +352,11 @@ main {
 /*------------ ACTIVITIES CONTENT --------------*/
 
 #activities {
-    padding: 0 50px;
+    padding: 0 20px;
 }
 
 .activity_title {
-    font-size: 1rem;
+    font-size: .9rem;
     margin-top: 60px;
     color: black;
 }
@@ -359,7 +368,7 @@ main {
 }
 
 .card_activity {
-    width: 270px;
+    width: 300px;
     height: auto;
     border-radius: 20px;
     box-shadow: #F2F2F2 1px 1px 10px;
@@ -387,14 +396,14 @@ main {
 .footer_content {
     display: flex;
     flex-flow: row wrap;
-    margin: 61px 53px 0 35px;
+    margin: 61px 20px 0 50px;
     background-color: #F2F2F2;
 }
 
 .card_footer {
     display: flex;
     flex-direction: column;
-    margin: 45px 100px 58px 70px;
+    margin: 45px 160px 58px 70px;
 }
 
 .card_footer > h3 {
@@ -414,7 +423,7 @@ main {
 
     /*------------ HEADER --------------*/
     .menu > li > a {
-        font-size: 1rem;
+        font-size: .9rem;
     }
 
     .menu > li > a:last-child {
@@ -423,8 +432,20 @@ main {
 
     /*------------ FILTERS --------------*/
 
+    #search_function > h1 {
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+
+    #search_function > p {
+        font-size: 14px;
+        line-height: 15px;
+        margin-top: 0;
+        padding-top: 5px;
+    }
+
     .filter {
-        margin-top: 20px;
+        margin-top: 30px;
     }
 
     .filter > h2 {
@@ -433,10 +454,15 @@ main {
 
     .filter_box {
         display: flex;
-        width: 80%;
+        width: 100%;
+        margin-left: -80px;
     }
 
     .filter_box > a {
+        margin-left: 15px;
+    }
+    
+    .filter_box > a > p {
         font-size: 0.8rem;
     }
     
@@ -457,11 +483,16 @@ main {
     }
 
     .accommodation_container > h2 {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
+        margin: 42px 0 23px 45px;
     }
 
     .card_accomodation {
-        width: 180px;
+        width: 200px;
+    }
+
+    .cover_image {
+        height: 100px;
     }
 
     .card_accomodation > h3, .popular_info > h3 {
@@ -488,22 +519,24 @@ main {
 
     .flex_popular > h2 {
         font-size: 1.3rem;
-        margin: 0;
+        margin: 0 0 0 25px;
     }
 
     .flex_popular > i {
-        padding-right: 20px;
+        padding-right: 40px;
     }
 
     .popular {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
         padding: 0;
     }
 
     .card_popular {
-        width: 200px;
+        width: 210px;
         height: 120px;
+        margin: 25px 12px 25px 12px;
+
     }
 
     .cover_image_popular {
@@ -536,6 +569,7 @@ main {
     .activity_title {
         margin-top: 0;
         padding-top: 30px;
+        margin-bottom: 30px;
     }
 
     .card_activity {
@@ -558,7 +592,7 @@ main {
     }
 
     .card_footer {
-        margin: 30px 40px;
+        margin: 30px 50px;
     }
 
     .card_footer > h3 {
@@ -625,7 +659,7 @@ main {
     /*------------ SEARCH FUNCTION --------------*/
 
     #search_function {
-        margin-left: 20px;
+        margin-left: 30px;
     }
 
     #search_function > h1 {
@@ -658,6 +692,7 @@ main {
     .filter {
         flex-direction: column;
         margin-bottom: 1rem;
+        margin-left: -20px;
         align-items: start;
     }
 
@@ -678,16 +713,15 @@ main {
     }
 
     .btn_filter {
-        width: 38%;
+        width: 35%;
     }
 
     .btn_filter > p {
-        font-size: 0.7rem;
+        font-size: 0.9rem;
     }
         
     .info > i {
-        margin-right: 10px;
-        margin-bottom: 30px;
+        margin: 0 10px 30px -20px;
     }
 
     .info > p {
@@ -730,6 +764,14 @@ main {
     }
 
     .more_info {
+        display: none;
+    }
+
+    .flex_popular {
+        padding-left: 20px;
+    }
+
+    .flex_popular > i{
         display: none;
     }
 

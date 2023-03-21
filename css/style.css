@@ -626,7 +626,7 @@ main {
 
     nav {
         width: 100%;
-        border-bottom: #F2F2F2 5px solid;
+        border-bottom: #F2F2F2 2px solid;
     }
 
     .menu {
@@ -644,16 +644,19 @@ main {
         margin: auto;
     }
 
+    .navLeft, .navRight {
+        width: 50%;
+        text-align: center;
+    }
+
     .menu > li > a:hover::after {
         position: absolute;
         content: "";
         display: block;
-        width: 57%;
-        height: 5px;
-        top: 40px;
+        width: 50%;
+        height: 2px;
+        top: 35px;
         background-color: #0065FC;
-        transform: translate(-50%, -50%);
-        margin-left: 50px;
     }
 
     /*------------ SEARCH FUNCTION --------------*/
@@ -717,7 +720,7 @@ main {
     }
 
     .btn_filter > p {
-        font-size: 0.9rem;
+        font-size: 0.7rem;
     }
         
     .info > i {
